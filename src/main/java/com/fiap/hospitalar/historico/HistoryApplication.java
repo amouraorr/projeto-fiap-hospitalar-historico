@@ -1,14 +1,14 @@
-package com.fiap.hospitalar.agendamento;
+package com.fiap.hospitalar.historico;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class HistoryApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(HistoryApplication.class, args);
 
 	}
 }
