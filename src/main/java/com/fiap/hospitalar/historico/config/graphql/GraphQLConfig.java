@@ -13,7 +13,7 @@ public class GraphQLConfig {
     @Bean
     public GraphQLSchema schema() {
         return SchemaParser.newParser()
-                .file("schema.graphqls")
+                .file("graphql/schema.graphqls")
                 .resolvers((GraphQLResolver<?>) new HistoryResolver())
                 .build()
                 .makeExecutableSchema();

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ConsultationService {
+public class HistoryConsultationService {
 
     @Autowired
     private HistoryRepository repository;

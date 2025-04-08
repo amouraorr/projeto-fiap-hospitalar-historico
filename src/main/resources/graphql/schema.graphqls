@@ -1,0 +1,11 @@
+type History {
+    id: ID!
+    paciente: String!
+    medico: String!
+    enfermeiro: String!
+    dataHora: String!
+}
+
+type Query {
+    histories: [History]
+}
