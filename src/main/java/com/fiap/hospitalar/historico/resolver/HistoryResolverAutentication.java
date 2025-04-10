@@ -1,3 +1,4 @@
+/*
 package com.fiap.hospitalar.historico.resolver;
 
 import com.fiap.hospitalar.historico.model.History;
@@ -8,7 +9,9 @@ import org.springframework.security.core.context.SecurityContextHolder;
 
 import java.util.List;
 
-/* Ajustar a classe TODO **/
+*/
+/* Ajustar a classe TODO **//*
+
 
 public class HistoryResolverAutentication {
 
@@ -23,9 +26,9 @@ public class HistoryResolverAutentication {
         if (role.equals("ROLE_DOCTOR") || role.equals("ROLE_NURSE")) {
             return historyRepository.findAll();
         } else if (role.equals("ROLE_PATIENT")) {
-            return historyRepository.findByPatientId(Long.valueOf(username));
+            return historyRepository.findByPaciente(String.valueOf(Long.valueOf(username)));
         } else {
             throw new SecurityException("Access Denied");
         }
     }
-}
+}*/

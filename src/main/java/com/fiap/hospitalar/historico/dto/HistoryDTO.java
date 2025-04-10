@@ -1,5 +1,6 @@
 package com.fiap.hospitalar.historico.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -11,6 +12,9 @@ public class HistoryDTO {
     private String paciente;
     private String medico;
     private String enfermeiro;
-    private LocalDateTime dataHora;
     private String status; // Por exemplo, status da consulta
+
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss") // Formato correto
+    private LocalDateTime dataHora;
+
 }

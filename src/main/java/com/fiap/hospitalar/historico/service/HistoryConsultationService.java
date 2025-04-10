@@ -13,7 +13,8 @@ public class HistoryConsultationService {
     @Autowired
     private HistoryRepository repository;
 
-    public List<History> getConsultationsByPatientId(Long patientId) {
-        return repository.findByPatientId(patientId);
+    public List<History> getHistoryByPaciente(String paciente) {
+
+        return repository.findByPaciente(paciente);//patient
     }
 }
